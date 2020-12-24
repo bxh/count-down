@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 html {
   box-sizing: border-box;
@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: white;
 }
 
 .video-bg {
@@ -31,7 +33,63 @@ video {
   top: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  min-width: 580px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 25px 50px;
+  border-radius: 5px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.input-container {
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 480px;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+input {
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  background: rgb(26, 115, 232);
+  cursor: pointer;
+  outline: none;
+  color: white;
 }
 
 @media screen and (max-width: 1600px) {
