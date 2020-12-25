@@ -14,7 +14,7 @@ const completeBtn = document.getElementById('complete-btn');
 
 let countdownTitle = '';
 let countdownDate = '';
-let countdownValue = Date;
+let countdownValue;
 let countdownActive;
 let savedCountdown; 
 
@@ -44,6 +44,8 @@ function updateDOM(){
   countdownActive = setInterval(() => {
     const now = new Date().getTime();
     const delta = countdownValue - now;
+    console.log(countdownDate);
+    console.log(now);
 
     const days = Math.floor(delta / day);
     const hours = Math.floor((delta % day) / hour);
